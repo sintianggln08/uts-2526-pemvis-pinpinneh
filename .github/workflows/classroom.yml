@@ -1,0 +1,43 @@
+name: 🤖 UTS Autograder
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  autograde:
+    name: Check UTS Submission
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📊 Run Autograder
+        run: |
+          echo "🚀 Starting UTS submission check..."
+          python autograder.py
+        continue-on-error: true
+
+      - name: 📝 Create submission report
+        run: |
+          echo "## 📊 UTS Submission Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Repository: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "Commit: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "Timestamp: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check the Actions log for detailed results! 🔍" >> $GITHUB_STEP_SUMMARY
+
+      - name: 📁 List uploaded files
+        run: |
+          echo "📁 Files in repository:"
+          find . -name "*.fprg" -type f | head -10

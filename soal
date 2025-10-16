@@ -1,0 +1,137 @@
+# UTS Pemrograman Visual 2526
+## Soal Flowchart Programming
+
+### Soal 1. Hitung Nilai Faktorial Rekursif
+
+**Deskripsi:**
+Buat flowchart program untuk menghitung nilai faktorial dari sebuah bilangan n (0 ≤ n ≤ 15) menggunakan rekursi.
+
+**Input:** Satu bilangan bulat positif n  
+**Output:** Hasil faktorial dari n
+
+**Contoh:**
+```
+Input: 5
+Output: 120
+```
+
+**File yang diharapkan:** `faktorial.fprg`
+
+**Test Cases:**
+| Input | Output |
+|-------|--------|
+| 5     | 120    |
+| 0     | 1      |
+| 3     | 6      |
+---
+
+### Soal 2. Jumlah Deret Fibonacci (n Terms)
+
+**Deskripsi:**
+Buat flowchart yang menghitung jumlah dari n bilangan pertama deret Fibonacci.
+Gunakan perulangan for.
+
+**Input:** n (jumlah bilangan Fibonacci)  
+**Output:** Jumlah seluruh deret hingga n
+
+**Contoh:**
+```
+Input: 5
+Output: 12   // (1 + 1 + 2 + 3 + 5)
+```
+
+**File yang diharapkan:** `fibonacci_sum.fprg`
+
+---
+
+### Soal 3. Analisis Nilai Mahasiswa
+
+**Deskripsi:**
+Buat flowchart yang menerima n nilai mahasiswa, kemudian menampilkan:
+- Nilai rata-rata
+- Nilai tertinggi
+- Nilai terendah
+
+Gunakan array untuk menyimpan data nilai.
+
+**Input:**
+```
+Masukkan jumlah mahasiswa: 4
+Masukkan nilai: 80, 70, 90, 60
+```
+
+**Output:**
+```
+Rata-rata = 75
+Tertinggi = 90
+Terendah = 60
+```
+
+**File yang diharapkan:** `nilai_analisis.fprg`
+
+---
+
+### Soal 4. Cek Bilangan Prima dan Cetak Deret
+
+**Deskripsi:**
+Buat flowchart yang menerima input bilangan n dan menampilkan semua bilangan prima ≤ n.
+Gunakan fungsi khusus `isPrima(x)` untuk memeriksa keprimaannya.
+
+**Input:** n (batas bilangan prima)  
+**Output:** Semua bilangan prima dari 2 hingga n
+
+**Contoh:**
+```
+Input: 10
+Output: 2 3 5 7
+```
+
+**File yang diharapkan:** `bilangan_prima.fprg`
+
+---
+
+### Soal 5. Simulasi Kalkulator Sederhana (Menu-driven)
+
+**Deskripsi:**
+Buat flowchart dengan menu pilihan menggunakan Switch/If statement:
+1. Penjumlahan
+2. Pengurangan
+3. Perkalian
+4. Pembagian
+
+User memilih menu, lalu program meminta dua bilangan dan menampilkan hasilnya.
+
+**Contoh:**
+```
+Menu:
+1. +
+2. -
+3. *
+4. /
+Pilihan: 3
+Masukkan a=4, b=5
+Output: 20
+```
+
+**File yang diharapkan:** `kalkulator.fprg`
+
+---
+
+## Instruksi Pengerjaan
+
+1. Setiap soal harus dikerjakan dalam format flowchart (.fprg)
+2. Gunakan struktur kontrol yang sesuai (loop, condition, array, function)
+3. Pastikan flowchart dapat menangani semua test case yang diberikan
+4. Upload semua file .fprg ke repository GitHub Anda
+
+## Kriteria Penilaian
+
+- **Algoritma (40%):** Logika dan struktur program
+- **Implementasi (30%):** Penggunaan elemen flowchart yang tepat
+- **Testing (20%):** Program dapat menangani semua test case
+- **Dokumentasi (10%):** Komentar dan penjelasan dalam flowchart
+
+**Deadline:** Sesuai jadwal yang telah ditentukan
+
+---
+*Good luck! 🚀*
