@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kalkulator"/>
+        <attribute name="authors" value="sinti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 03.01.39 PM"/>
+        <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDIuMjcuNDEgUE07MjAzOA=="/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDMuMDEuMzkgUE07MTsyMTQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, hasil, penjumlahan, pengurangan, perkalian, pembagian, pilihan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai a= &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;masukkan nilai b= &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;menu: 1.+ 2.- 3.* 4./&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <if expression="pilihan=1">
+                <then>
+                    <assign variable="penjumlahan" expression="a+b"/>
+                    <output expression="penjumlahan" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pilihan=2">
+                        <then>
+                            <assign variable="pengurangan" expression="a-b"/>
+                            <output expression="pengurangan" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan=3">
+                                <then>
+                                    <assign variable="perkalian" expression="a*b"/>
+                                    <output expression="perkalian" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan=4">
+                                        <then>
+                                            <assign variable="pembagian" expression="a/b"/>
+                                            <output expression="pembagian" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nilai_analisis"/>
+        <attribute name="authors" value="sinti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04.13.24 PM"/>
+        <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDEuNDkuNTEgUE07MjA0Mg=="/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDQuMTMuMjQgUE07MTsyMTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jumlah, rataRata, min, max, i" type="Integer" array="False" size=""/>
+            <declare name="nilai" type="Integer" array="True" size="4"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;Masukkan jumlah mahasiswa: &quot;" newline="True"/>
+            <input variable="jumlah"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="&quot;Masukkan nilai: &quot;" newline="True"/>
+                <input variable="nilai[i]"/>
+                <assign variable="jumlah" expression="jumlah+nilai[i]"/>
+            </for>
+            <if expression="i==0">
+                <then>
+                    <assign variable="max" expression="nilai[i]"/>
+                    <assign variable="min" expression="nilai[i]"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="rataRata" expression="jumlah/4"/>
+            <output expression="&quot;Rata-Rata= &quot; &amp;rataRata" newline="True"/>
+            <output expression="&quot;Tertinggi= &quot;&amp;max" newline="True"/>
+            <output expression="&quot;Terendah= &quot; &amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="faktorial"/>
+        <attribute name="authors" value="sinti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 03.49.37 PM"/>
+        <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDMuMzYuMDggUE07MjA0Mg=="/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDMuNDkuMzcgUE07MTsyMTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, result" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <assign variable="result" expression="factorial(x)"/>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+    <function name="factorial" type="Integer" variable="result">
+        <parameters>
+            <parameter name="inX" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <if expression="inX==1">
+                <then>
+                    <assign variable="result" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="result" expression="inX*factorial(inX-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

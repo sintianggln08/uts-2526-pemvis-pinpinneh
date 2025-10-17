@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci_sum"/>
+        <attribute name="authors" value="sinti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04.12.52 PM"/>
+        <attribute name="created" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDMuNTMuNTcgUE07MjA0NQ=="/>
+        <attribute name="edited" value="c2ludGk7TVNJOzIwMjUtMTAtMTc7MDQuMTIuNTIgUE07MTsyMTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, jumlahderet, hasil, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="jumlahderet" expression="1+1+2+3+n"/>
+                <assign variable="hasil" expression="jumlahderet"/>
+            </for>
+            <output expression="hasil&amp;&quot;//&quot;&amp;&quot;1+1+2+3+&quot;&amp;n&amp;&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
